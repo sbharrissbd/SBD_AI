@@ -42,7 +42,8 @@ Each microservice is completely independent of each other with its own User Inte
 
 Each service is packaged as a Docker image and container using Docker clustering or a container orchestration tool call OpenShift. 
 Below is a picture of application code and DevOps cluster managed by OpenShift that SBD implemented. 
- 
+![Test Image1](https://github.com/sbharrissbd/SBD_AI/blob/Images/graphic1.png)
+
 1.2.3	Message Streaming
 
 For PECOS 2.0, SBD used RabbitMQ for asynchronous messaging for inter-service communication. The services communicated by exchanging messages over messaging channels called Topics. PECOS also implemented an architectural pattern called “Event Sourcing” in which sequence of events are recorded in an append-only Event Store using RabbitMQ. The RabbitMQ cluster was deployed and managed by OpenShift.
@@ -54,7 +55,7 @@ Our HIOS solution relied on Apache Camel for the inter-service communication.
 The PECOS 2.0 DevSecOps team implemented full Continuous Integration/Continuous Deployment (CI/CD) automation pipeline to deliver multiple micro-services to OpenShift platform in containers. The platform was implemented as Infrastructure-as-Code (IAC) and configured purely through automation. Nexus was used for the container store. SonarQube, OWASP and Twistlock scans were used to create a centralized artifacts repository of hardened and authorized containers. Microservices were secured by leveraging both native AWS constructs and capabilities and the security and isolation mechanisms that are built into OpenShift. 
 
 Below is a picture of CI/CD pipeline with corresponding tools. 
-
+![Test Image2](https://github.com/sbharrissbd/SBD_AI/blob/Images/graphic2.png)
  
 1.2.5	AI/ML platforms and integration
 
@@ -86,7 +87,8 @@ For PECOS 2.0, we implemented an eight-step strategy for shifting security to th
 
 7.	Build monitoring capabilities for infrastructure and applications
 
-8.	Log all generated documents in the security repository 
+8.	Log all generated documents in the security repository
+![Test Image3](https://github.com/sbharrissbd/SBD_AI/blob/Images/graphic3.png)
  
 1.2.8	Perform Platform Level threat assessment
 
